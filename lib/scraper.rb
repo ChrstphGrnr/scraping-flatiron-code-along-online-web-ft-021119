@@ -26,7 +26,7 @@ class Scraper
 
   def make_courses
     course = Course.new
-    course.title = self.get_courses.first()
+    course.title = self.get_courses.first.css("h2").text
 
 
 
